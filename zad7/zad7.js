@@ -1,8 +1,10 @@
 isHappyNumber = (num) => {
     let sum = getSumOfSquaredDigits(num);
+    let previous = []
     while(sum !== 1){
+        previous.push(sum)
         sum = getSumOfSquaredDigits(sum)
-        if(sum == 4){
+        if(previous.includes(sum)){
             return false;
         }
     }
@@ -17,4 +19,5 @@ getSumOfSquaredDigits = (num) => {
                       .reduce((a0, a1) => a0 + a1*a1, 0)
 }
 
+console.log(isHappyNumber(22))
 console.log(isHappyNumber(19))
