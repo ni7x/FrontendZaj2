@@ -1,5 +1,8 @@
 function isOdd(x){
-    return x%2 == 1;
+    return Boolean(x%2);
 } 
 
 isEven = (x) => x%2 == 0;
+
+console.log(isOdd(5))
+console.log(isEven(4))
