@@ -14,6 +14,4 @@ getSumOfSquaredDigits = (num) => {
 }
 
 
-
-
 console.log(isHappyNumber(19))
