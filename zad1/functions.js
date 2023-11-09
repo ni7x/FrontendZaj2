@@ -2,7 +2,7 @@ function isOdd(x){
     return Boolean(x%2);
 } 
 
-isEven = (x) => x%2 == 0;
+isEven = (x) => Boolean(!(x%2));
 
 console.log(isOdd(5))
 console.log(isEven(4))
